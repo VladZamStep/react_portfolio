@@ -1,67 +1,39 @@
 import './header.css';
-import HeaderBTN from "./HeaderBTN";
-import me from "../../assets/me.jpg";
-import HeaderSocials from "./Header-socials";
+import myPhoto from "../../assets/myPhoto.jpg";
+import CV from '../../assets/cv.pdf';
+import { linksData } from '../../data/data';
+
 const Header = () => {
     return (
         <div id="header">
             <div className="main__container header__container">
-                <div className="me">
-                    <img src={me} alt="me" />
+                <div className="my__photo">
+                    <img src={myPhoto} alt="me" />
                 </div>
                 <div className="header__wrapper">
-                    <h1>I'm Vlad Stepochkin</h1>
-                    <h5 className="text-clr">Front-end Web Developer</h5>
-                    <HeaderBTN />
-                    <HeaderSocials />
-                    {/* <a href="#contact" className="scroll__down">Scroll Down</a> */}
+                    <h5 className="hello__title letter-spacing-4 text-clr">Hello, My name is</h5>
+                    <h1>Vlad Stepochkin</h1>
+                    <h5 className="letter-spacing-4 text-clr">Front-end Web Developer</h5>
+                    <div className="header__btn">
+                        <a href={CV} download className="btn">Download CV</a>
+                        <a href="#contact" className="btn">Contact Me</a>
+                    </div>
+                    <div className="header__socials">
+                        {linksData.map(item => (
+                            <div className="header_social_item" key={item.id}>
+                                <a
+                                    className="header_a_item"
+                                    href={item.specLink}
+                                    target="_blank"
+                                >
+                                    {item.icon}
+                                </a>
+                            </div>
+                        ))}
+                    </div >
                 </div>
             </div>
         </div>
     )
 }
 export default Header;
-
-
-
-
-
-
-
-{/* <div className="profile-container">
-            <div className="profile-parent">
-                <div className="profile-details">
-                    <div className="colz">
-                        <a href="#">
-                            <i className="fa fa-facebook-square"></i>
-                        </a>
-                        <a href="#">
-                            <i className="fa fa-google-plus-square"></i>
-                        </a>
-                        <a href="#">
-                            <i className="fa fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i className="fa fa-youtube"></i>
-                        </a>
-                        <a href="#">
-                            <i className="fa fa-twitter"></i>
-                        </a>
-                    </div>
-                    <div className="profile-details-name">
-                        <span className="primary-text">
-                            {" "} Hello, I'm<span className="highlighted-text">Vlad</span>
-                        </span>
-                    </div>
-                    <div className="profile-details-role">
-                        <span className="primary-text">
-                            {" "}
-                            <h1>
-
-                            </h1>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    ) */}

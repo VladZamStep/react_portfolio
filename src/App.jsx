@@ -1,5 +1,5 @@
 import Header from './container/header/Header';
-import Nav from './container/nav/Nav';
+import Navbar from './container/navbar/Navbar';
 import About from './container/aboutme/Aboutme';
 import Projects from './container/projects/Projects';
 import Contact from './container/contact/Contact';
@@ -9,13 +9,13 @@ const App = () => {
   return (
     <>
       <Header />
-      <Nav />
+      <Navbar />
       <About />
       <Projects />
       <Contact />
       <Footer />
-      <div class="animation-area">
-        <ul class="box-area">
+      <div className="animation-area">
+        <ul className="box-area">
           <li></li>
           <li></li>
           <li></li>

@@ -27,7 +27,7 @@ nav>li>a {
     background: hsl(var(--clr-white)/.1);
     color: hsl(var(--clr-white));
     padding: 0.5rem;
-    border-radius: .5em;
+    border-radius: var(--smallBR);
     transition: 0.2s ease-in-out;
     font-size: 1.3em;
     box-shadow: 0px 0px 3px hsl(var(--clr-bg-dark));
@@ -37,13 +37,12 @@ nav>li>a:hover,
 nav>li>a:focus {
     background-color: hsl(var(--clr-green));
     color: hsl(var(--clr-bg-dark));
-    /* box-shadow: 0px 0px 8px hsl(var(--clr-white)); */
 }
 
 
 nav>li>a.active {
     background: hsl(var(--clr-white)/.1);
-    color: hsl(var(--clr-white));
+    color: hsl(var(--clr-green));
     font-size: 1.2em;
-    box-shadow: inset 0px 0px 8px hsl(var(--clr-bg-dark));
+    box-shadow: inset 0px 0px 8px hsl(var(--clr-black));
 }
