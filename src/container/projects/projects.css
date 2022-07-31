@@ -25,15 +25,13 @@
 }
 
 .project_img_container {
-    position: relative;
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
     transform-style: preserve-3d;
     transform: perspective(4000px);
 }
 
 .project_img_container>img {
-    position: absolute;
     width: 100%;
     height: 100%;
     transition: var(--transition-400);
