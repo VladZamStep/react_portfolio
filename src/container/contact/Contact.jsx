@@ -5,8 +5,10 @@ const Contact = () => {
     return (
         <section id="contact">
             <h5 className="ff-sans-normal fs-400 uppercase">Wanna Send Me A Massage?</h5>
-            <span className="behindText ff-anton fs-700 letter-spacing-2 uppercase" >Contact Me</span>
-            <h2 className="ff-anton fs-700 letter-spacing-2 uppercase">Contact Me</h2>
+            <div className="section__title">
+                <span className="behindText ff-anton fs-700 letter-spacing-2 uppercase" >Contact Me</span>
+                <h2 className="ff-anton fs-700 letter-spacing-2 uppercase">Contact Me</h2>
+            </div>
             <div className="main__container contact__container">
                 <div className="contact__options">
                     {contactData.map(item => (

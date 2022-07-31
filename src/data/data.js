@@ -1,4 +1,4 @@
-import { AiOutlineExperiment, AiOutlineMail, AiOutlineHome } from 'react-icons/ai';
+import { AiOutlineExperiment, AiOutlineMail, AiOutlineHome, AiOutlineFileDone } from 'react-icons/ai';
 import { BsLinkedin, BsWhatsapp } from 'react-icons/bs';
 import { BiUserCircle } from 'react-icons/bi';
 import { ImGithub } from 'react-icons/im';
@@ -6,6 +6,9 @@ import { MdOutlineEmail } from 'react-icons/md';
 import img1 from '../assets/portfolio1.jpg';
 import img2 from '../assets/portfolio2.jpg';
 import img3 from '../assets/portfolio3.jpg';
+import certificate1 from '../assets/certificate1.png';
+import certificate2 from '../assets/certificate2.png';
+import certificate3 from '../assets/certificate3.png';
 
 export const navbarData = [
     {
@@ -15,6 +18,10 @@ export const navbarData = [
     {
         icon: <BiUserCircle />,
         specLink: "#about",
+    },
+    {
+        icon: <AiOutlineFileDone />,
+        specLink: "#certifications",
     },
     {
         icon: <AiOutlineExperiment />,
@@ -61,6 +68,27 @@ export const personalData = [
 
 export const experienceCardsData = [
     'HTML', 'CSS', 'JavaScript', 'React.js', 'Node.js', 'SCSS', 'Express.js', 'MongoDB'
+]
+
+export const certificationsData = [
+    {
+        image1: certificate1,
+        title: "Responsive Web Design",
+        fcc_link: "https://www.freecodecamp.org/certification/ZamNoise/responsive-web-design",
+        id: 1
+    },
+    {
+        image1: certificate2,
+        title: "JS Algorithms & DS",
+        fcc_link: "https://www.freecodecamp.org/certification/ZamNoise/javascript-algorithms-and-data-structures",
+        id: 1
+    },
+    {
+        image1: certificate3,
+        title: "Front End Dev Libraries",
+        fcc_link: "https://www.freecodecamp.org/certification/ZamNoise/front-end-development-libraries",
+        id: 1
+    },
 ]
 
 //Projects Data

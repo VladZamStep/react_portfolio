@@ -1,0 +1,97 @@
+.certifications__container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.certification__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: hsl(var(--clr-white)/.1);
+    padding: 1rem;
+    border-radius: var(--smallBR);
+    transition: var(--transition-400);
+}
+
+.certification__title {
+    height: 100%;
+    margin: .5rem 0 .5rem;
+    color: hsl(var(--clr-white));
+    transition: var(--transition-400);
+}
+
+.certification_img_container {
+    transform-style: preserve-3d;
+    transform: perspective(4000px);
+}
+
+.certification_img_container>img {
+    width: 100%;
+    height: 100%;
+    transition: var(--transition-400);
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.certification__wrapper:hover {
+    background: transparent;
+}
+
+.certification__wrapper:hover>.certification__title {
+    color: transparent;
+}
+
+.certification__wrapper:hover img:first-child {
+    transform: rotateZ(-10deg);
+    box-shadow: -18px 12px 20px hsl(var(--clr-green)/.1),
+        -14px 8px 10px hsl(var(--clr-white)/.1);
+}
+
+.certification__btn>a {
+    width: 100%;
+}
+
+@media screen and (max-width:900px) {
+    .certifications__container {
+        gap: .5em;
+    }
+
+    .certification__wrapper {
+        padding: .45em;
+    }
+
+    .certification__title {
+        margin: .35em 0 .35em;
+    }
+
+    .certification__wrapper:hover img:first-child {
+        transform: rotateZ(-10deg);
+        box-shadow: -18px 12px 20px hsl(var(--clr-green)/.1),
+            -14px 8px 10px hsl(var(--clr-white)/.1);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .certifications__container {
+        margin-top: 1.25em;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .certification__wrapper {
+        padding: .35em;
+    }
+
+    .certification__title {
+        margin: .25em 0 .25em;
+    }
+
+    .certification__wrapper:hover img:first-child {
+        transform: rotateZ(-10deg);
+        box-shadow: -10px 10px 10px hsl(var(--clr-green)/.1),
+            -5px 5px 5px hsl(var(--clr-white)/.1);
+    }
+}

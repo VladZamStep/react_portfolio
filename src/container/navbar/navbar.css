@@ -1,17 +1,16 @@
 nav {
-    background: transparent;
+    margin: 0;
+    background-color: transparent;
     width: max-content;
     padding: .7rem .5rem;
     z-index: 2;
     position: fixed;
-    right: 1.2rem;
+    right: 25px;
     bottom: 50%;
-    transform: translateX(-50%);
     transform: translateY(50%);
     display: flex;
     flex-direction: column;
     gap: .8rem;
-    backdrop-filter: blur(20px);
 }
 
 nav>li {
@@ -45,4 +44,31 @@ nav>li>a.active {
     color: hsl(var(--clr-green));
     font-size: 1.2em;
     box-shadow: inset 0px 0px 8px hsl(var(--clr-black));
+}
+
+@media screen and (max-width:900px) {
+    nav {
+        right: 15px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    nav {
+        padding: .7em;
+        position: fixed;
+        right: 50%;
+        bottom: 0;
+        transform: translate(50%);
+        flex-direction: row;
+        gap: .8rem;
+        background-color: hsl(var(--clr-black)/.6);
+        border-radius: var(--smallBR) var(--smallBR) 0 0;
+        backdrop-filter: blur(20px);
+    }
+
+    nav>li>a {
+        background: hsl(var(--clr-white)/.5);
+        color: hsl(var(--clr-black));
+    }
 }

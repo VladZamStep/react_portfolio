@@ -4,13 +4,15 @@ import About from './container/aboutme/Aboutme';
 import Projects from './container/projects/Projects';
 import Contact from './container/contact/Contact';
 import Footer from './container/footer/Footer';
+import Certifications from './container/certifications/Certications';
 
 const App = () => {
   return (
     <>
-      <Header />
       <Navbar />
+      <Header />
       <About />
+      <Certifications />
       <Projects />
       <Contact />
       <Footer />

@@ -5,8 +5,10 @@ const About = () => {
     return (
         <section id="about">
             <h5 className="fs-400 uppercase">Get to know</h5>
-            <span className="behindText ff-anton fs-700 letter-spacing-2 uppercase" >About me</span>
-            <h2 className="ff-anton fs-700 letter-spacing-2 uppercase" >About me</h2>
+            <div className="section__title">
+                <h2 className="ff-anton fs-700 letter-spacing-2 uppercase" >About me</h2>
+                <span className="behindText ff-anton fs-700 letter-spacing-2 uppercase" >About me</span>
+            </div>
             <div className="main__container about__container">
                 <div className="left__wrapper">
                     <h5 className="about__title fs-500 uppercase">Personal Info</h5>

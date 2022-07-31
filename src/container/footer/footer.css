@@ -59,3 +59,20 @@
         inset 3px 3px 3px hsl(var(--clr-black)/.8),
         inset -3px -3px 3px hsl(var(--clr-white)/.05);
 }
+
+@media screen and (max-width:600px) {
+    .footer__container {
+        flex-direction: column;
+        padding-bottom: 5em;
+    }
+
+    .horizontal__line {
+        display: none;
+    }
+
+    .copyright__info,
+    .footer__socials {
+        padding-right: 0;
+        padding-block: .25em;
+    }
+}

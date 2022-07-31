@@ -1,15 +1,11 @@
-#header {
-    padding-inline: clamp(4rem, 7vw, 20rem);
-}
-
 .header__container {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: grid;
     grid-template-columns: 1.2fr 2fr;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.5em;
 }
 
 .header__wrapper {
@@ -22,14 +18,17 @@
 .my__photo {
     justify-self: center;
     width: 250px;
-    border-radius: .8rem;
-    box-shadow: 0 0 .8rem hsl(var(--clr-black)/.5);
+    border-radius: var(--smallBR);
+    box-shadow: 0 0 .8em hsl(var(--clr-black)/.5);
+    background-color: transparent;
 }
 
 img {
+    height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: .5rem;
+    overflow: hidden;
+    border-radius: var(--smallBR);
 }
 
 .hello__title {
@@ -38,7 +37,7 @@ img {
 
 .header__btn {
     display: flex;
-    margin-top: .6rem;
+    margin-top: .6em;
     gap: 1em;
     justify-content: center;
 }
@@ -49,9 +48,10 @@ img {
 }
 
 .header_social_item {
-    padding-top: .4rem;
+    padding-top: .4em;
     width: 40px;
     height: 40px;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,24 +66,40 @@ img {
 }
 
 .header_a_item:hover {
-    font-size: 1.2em;
     color: hsl(var(--clr-black)/.7);
     filter: drop-shadow(0px 0px 10px hsl(var(--clr-white)));
 }
 
-/* @media screen and (max-width:1024px) {
-    header {
-        height: 68vh;
+@media screen and (max-width:900px) {
+    .header__container {
+        grid-template-columns: 1.6fr 2fr;
+        gap: 1em;
     }
+
+
 }
 
 @media screen and (max-width:600px) {
-    header {
-        height: 100vh;
+    .header__container {
+        display: flex;
+        flex-direction: column;
     }
 
-    .header__socials,
-    .scroll__down {
-        display: none;
+
+    .header__wrapper>h1 {
+        font-size: 1.5rem;
     }
-} */
+
+    .header__wrapper>h5 {
+        font-size: 1.1rem;
+    }
+
+    .header__wrapper {
+        align-items: center;
+    }
+
+    .my__photo {
+        width: 200px;
+        height: 300px;
+    }
+}

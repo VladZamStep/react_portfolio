@@ -1,9 +1,3 @@
-#about {
-    padding-top: 4em;
-    padding-bottom: 4em;
-    padding-inline: clamp(4em, 7vw, 20em);
-}
-
 .about__container {
     margin-top: 4em;
     display: grid;
@@ -31,10 +25,6 @@
     color: hsl(var(--clr-white));
 }
 
-.about__btn {
-    justify-self: end;
-}
-
 .about__btn>a {
     width: 100%;
 }
@@ -49,6 +39,8 @@
     grid-template-columns: 1fr 1fr;
     gap: .5em;
     margin-top: .5em;
+    width: 100%;
+    height: 100%;
 }
 
 .experience__card {
@@ -70,129 +62,23 @@
     background: hsl(var(--clr-white)/.05);
 }
 
-/* 
-@media screen and (max-width:1024px) {
-    .experience__cards {
-        width: 80%;
-        margin: 1rem auto 1rem;
-    }
-}
-
 @media screen and (max-width:600px) {
-    .experience__cards {
-        padding: 1rem 1.2rem;
-    }
-}
- */
-
-
-/* .about__container {
-    display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
-}
-
-.about__me {
-    width: 100%;
-    aspect-ratio: 1;
-    border-radius: 2rem;
-    background: linear-gradient(45deg,
-            transparent,
-            var(--color-primary),
-            transparent);
-}
-
-
-.about__me-image {
-    border-radius: 2rem;
-    overflow: hidden;
-    transform: rotate(10deg);
-    transition: var(--transition);
-}
-
-.about__me-image:hover {
-    transform: rotate(0);
-}
-
-.about__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-}
-
-.about__card {
-    background: var(--color-bg-variant);
-    border-radius: 1rem;
-    border: 1px solid transparent;
-    padding: 2rem;
-    text-align: center;
-    transition: var(--transition);
-}
-
-.about__card:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
-}
-
-.about__icon {
-    color: var(--color-primary);
-    font-size: 1.4rem;
-    margin-bottom: 0.7rem;
-}
-
-.about__card h5 {
-    font-size: 0.95rem;
-}
-
-.about__card small {
-    font-size: 0.7rem;
-    color: var(--color-light);
-}
-
-.about__content p {
-    margin: 2rem 0 2.6rem;
-}
-
-@media screen and (max-width:1024px) {
     .about__container {
-        grid-template-columns: 1fr;
-        gap: 0;
-        justify-content: center;
-
+        margin-top: 1.25em;
+        display: flex;
+        flex-direction: column;
     }
 
-    .about__me {
-        width: 50%;
-        margin: 1.5rem auto 4rem;
-    }
-
-    .about__content {
+    .about__title {
         text-align: center;
+        color: hsl(var(--clr-white)/.8);
     }
 
-    .about__content p {
-        margin: 1.5rem 0 1.5rem;
+    .about__btn {
+        margin-top: 1rem;
+    }
+
+    .experience__card {
+        height: 50px;
     }
 }
-
-@media screen and (max-width:600px) {
-    .about__content {
-        text-align: center;
-    }
-
-    .about__content p {
-        margin: 1rem 0;
-    }
-
-    .about__me {
-        width: 60%;
-        margin: 0.5rem auto 3rem;
-    }
-
-    .about__cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
-} */

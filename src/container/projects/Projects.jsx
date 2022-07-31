@@ -1,12 +1,14 @@
 import './projects.css';
 import { projectData } from '../../data/data';
 
-const Portfolio = () => {
+const Projects = () => {
     return (
         <section id="projects">
             <h5 className="ff-sans-normal fs-400 uppercase">My Recent Work</h5>
-            <span className="behindText ff-anton fs-700 letter-spacing-2 uppercase" >Projects</span>
-            <h2 className="ff-anton fs-700 letter-spacing-2 uppercase" >Projects</h2>
+            <div className="section__title">
+                <span className="behindText ff-anton fs-700 letter-spacing-2 uppercase" >Projects</span>
+                <h2 className="ff-anton fs-700 letter-spacing-2 uppercase" >Projects</h2>
+            </div>
             <div className="main__container projects__container">
                 {projectData.map(item => {
                     return (
@@ -28,4 +30,4 @@ const Portfolio = () => {
         </section >
     )
 }
-export default Portfolio;
+export default Projects;
