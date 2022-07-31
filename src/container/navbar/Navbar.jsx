@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <nav>
             {navbarData.map(item => (
-                <li>
+                <li key={item.id}>
                     <a href={item.specLink} onClick={() => setActiveNav(item.specLink)}
                         className={activeNav === item.specLink ? "active" : ""}>
                         {item.icon}

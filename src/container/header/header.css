@@ -44,7 +44,7 @@ img {
 
 .header__socials {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .header_social_item {

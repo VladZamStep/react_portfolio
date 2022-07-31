@@ -237,13 +237,16 @@ a:hover {
   color: hsl(var(--clr-white));
 }
 
-.btn {
+.btn,
+.btn:focus {
   color: hsl(var(--clr-black)/.9);
   cursor: pointer;
   padding: 0.3rem 1.2rem;
   border-radius: var(--smallBR);
+  border: none;
   border: 2px solid hsl(var(--clr-white)/.8);
   transition: var(--transition-200);
+  outline: none;
 }
 
 @media screen and (max-width:600px) {
@@ -259,9 +262,12 @@ a:hover {
   filter: drop-shadow(0px 0px 5px hsl(var(--clr-white)/.5));
 }
 
-.btn-dark {
+.btn-dark,
+.btn-dark:focus {
   background: transparent;
   color: hsl(var(--clr-green));
+  border: none;
+  border: 2px solid hsl(var(--clr-green));
   border-color: hsl(var(--clr-green));
 }
 

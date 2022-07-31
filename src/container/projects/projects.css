@@ -15,6 +15,10 @@
 }
 
 .project__title {
+    cursor: default;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
     margin: .5rem 0 .5rem;
     color: hsl(var(--clr-white));
     transition: var(--transition-400);
@@ -102,7 +106,7 @@
 @media screen and (max-width:600px) {
     .projects__container {
         margin-top: 1.25em;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 50% 50%;
     }
 
     .project__wrapper {
@@ -111,6 +115,7 @@
 
     .project__title {
         margin: .25em 0 .25em;
+        font-size: .9rem;
     }
 
     .project__wrapper:hover img:nth-child(1) {

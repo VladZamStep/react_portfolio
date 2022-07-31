@@ -1,7 +1,29 @@
 import './contact.css';
 import { contactData } from '../../data/data';
+import emailjs from 'emailjs-com';
+import { useRef, useState } from 'react';
+import { AiOutlineCheck } from 'react-icons/ai';
 
 const Contact = () => {
+
+    const form = useRef();
+    const [open, setOpen] = useState(false);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm("service_oxrzle3", "template_0qt19p4", form.current, "yEytP3kN4z1-2amLp")
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        setOpen(true);
+        setTimeout(() => {
+            setOpen(false);
+        }, 1500);
+        e.target.reset();
+    }
+
     return (
         <section id="contact">
             <h5 className="ff-sans-normal fs-400 uppercase">Wanna Send Me A Massage?</h5>
@@ -23,11 +45,13 @@ const Contact = () => {
                         </div>
                     ))}
                 </div>
-                <form>
+                <form ref={form} onSubmit={sendEmail}>
                     <input type="text" name="name" placeholder="Your Full Name" required />
                     <input type="email" name="email" placeholder="Your Email" required />
                     <textarea name="message" placeholder="Your Message" required />
-                    <button type="submit" className="sendMessage__btn btn btn-dark">Send Message</button>
+                    <button type="submit" className="sendMessage__btn btn btn-dark">
+                        {open ? <AiOutlineCheck /> : "Send Message"}
+                    </button>
                 </form>
             </div>
         </section >

@@ -11,6 +11,18 @@
     gap: 1rem;
 }
 
+.success__message {
+    position: absolute;
+    padding: .25em;
+    color: hsl(var(--clr-white)/.8);
+    font-size: 2rem;
+    background-color: hsl(var(--clr-white)/.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
 .contact__option {
     color: hsl(var(--clr-white)/.5);
     background: hsl(var(--clr-white)/.1);
@@ -63,11 +75,14 @@ textarea {
 
 input:hover,
 input:focus,
-textarea:hover,
-textarea:focus {
+textarea:hover, .success__message>textarea:focus {
     box-shadow: 0 0 0 hsl(var(--clr-black)/.0), 0 0 0 hsl(var(--clr-white)/.0),
         inset 3px 3px 3px hsl(var(--clr-black)/.8),
         inset -3px -3px 3px hsl(var(--clr-white)/.05);
+}
+
+.sendMessage__btn {
+    transition: var(--transition-400);
 }
 
 @media screen and (max-width:600px) {
