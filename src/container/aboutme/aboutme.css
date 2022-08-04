@@ -36,7 +36,7 @@
 
 .experience__cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: .5em;
     margin-top: .5em;
     min-height: 50px;
@@ -75,5 +75,15 @@
 
     .about__btn {
         margin-top: 1rem;
+    }
+
+    .experience__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .experience__cards {
+        grid-template-columns: 1fr 1fr;
     }
 }

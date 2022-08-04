@@ -127,7 +127,7 @@ export const personalData = [
 ]
 
 export const experienceCardsData = [
-    'HTML', 'CSS', 'JavaScript', 'React.js', 'Node.js', 'SCSS', 'Express.js', 'MongoDB'
+    'HTML', 'CSS', 'Bootstrap', 'JavaScript', 'JQuery', 'React', 'Redux', 'Node.js', 'SCSS', 'Express.js', 'MongoDB', 'Mongoose'
 ]
 
 export const certificationsData = [
@@ -250,7 +250,7 @@ export const projectData = [
         image3: fcc1,
         title: "More FCC Projects",
         github_link: "https://codepen.io/your-work",
-        id: 10,
+        id: 11,
         btn: "Codepen",
     },
 ]
