@@ -67,8 +67,18 @@
         -2px 0 10px hsl(var(--clr-white)/.1);
 }
 
-.project__btn>a {
+.spec__btn {
+    padding-inline: .25em;
     width: 100%;
+}
+
+.project__btn {
+    display: flex;
+    gap: .5em;
+}
+
+.empty {
+    display: none;
 }
 
 @media screen and (max-width:900px) {
@@ -100,6 +110,10 @@
         transform: translateX(1.35em) translateY(.4em) rotateY(45deg);
         box-shadow: -4px -2px 10px hsl(var(--clr-green)/.2),
             -2px 0 6px hsl(var(--clr-white)/.1);
+    }
+
+    .project__btn {
+        gap: .45em;
     }
 }
 
@@ -134,5 +148,13 @@
         transform: translateX(1em) translateY(.35em) rotateY(45deg);
         box-shadow: -4px -2px 10px hsl(var(--clr-green)/.2),
             -2px 0 6px hsl(var(--clr-white)/.1);
+    }
+
+    .project__btn {
+        gap: .35em;
+    }
+
+    .spec__btn {
+        font-size: .8rem;
     }
 }

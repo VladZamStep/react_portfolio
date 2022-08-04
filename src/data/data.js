@@ -158,19 +158,23 @@ export const projectData = [
         image1: b3,
         image2: b2,
         image3: b1,
-        title: "Booka.com",
-        github_link: "https://github.com/VladZamStep/react_booka",
+        title: "Booka App",
+        github_link: "https://github.com/VladZamStep/main-booka",
+        heroku_link: "https://booka-main.herokuapp.com/",
         id: 1,
-        btn: "Github",
+        btn1: "Github",
+        btn2: "Live",
     },
     {
         image1: ab3,
         image2: ab2,
         image3: ab1,
         title: "Admin Booka App",
-        github_link: "https://github.com/VladZamStep/react_booka",
+        github_link: "https://github.com/VladZamStep/admin_booka",
+        heroku_link: "https://admin-booka.herokuapp.com/",
         id: 2,
-        btn: "Github",
+        btn1: "Github",
+        btn2: "Live",
     },
     {
         image1: p3,
@@ -179,7 +183,7 @@ export const projectData = [
         title: "My Portfolio",
         github_link: "https://github.com/VladZamStep/react_portfolio",
         id: 3,
-        btn: "Github",
+        btn1: "Github",
     },
     {
         image1: sw3,
@@ -188,7 +192,7 @@ export const projectData = [
         title: "Space Website",
         github_link: "https://github.com/VladZamStep/space-site-landing",
         id: 4,
-        btn: "Github",
+        btn1: "Github",
     },
     {
         image1: cc3,
@@ -197,7 +201,7 @@ export const projectData = [
         title: "Codepen-clone",
         github_link: "https://github.com/VladZamStep/codepen-clone",
         id: 5,
-        btn: "Github",
+        btn1: "Github",
     },
     {
         image1: ms3,
@@ -206,7 +210,7 @@ export const projectData = [
         title: "Minesweeper-clone",
         github_link: "https://github.com/VladZamStep/minesweeper-clone",
         id: 6,
-        btn: "Github",
+        btn1: "Github",
     },
     {
         image1: ttt3,
@@ -215,7 +219,7 @@ export const projectData = [
         title: "Tic Tac Toe Game",
         github_link: "https://github.com/VladZamStep/tic-tac-toe_game/tree/main",
         id: 7,
-        btn: "Github",
+        btn1: "Github",
     },
     {
         image1: c3,
@@ -224,7 +228,7 @@ export const projectData = [
         title: "JS Calculator",
         github_link: "https://github.com/VladZamStep/native-js-calculator",
         id: 8,
-        btn: "Github",
+        btn1: "Github",
     },
     {
         image1: bj3,
@@ -233,7 +237,7 @@ export const projectData = [
         title: "Blackjack Minigame",
         github_link: "https://github.com/VladZamStep/blackjack-minigame",
         id: 9,
-        btn: "Github",
+        btn1: "Github",
     },
     {
         image1: ce3,
@@ -242,7 +246,7 @@ export const projectData = [
         title: "Chrome Extention",
         github_link: "https://github.com/VladZamStep/chrome-extention",
         id: 10,
-        btn: "Github",
+        btn1: "Github",
     },
     {
         image1: fcc3,
@@ -251,7 +255,7 @@ export const projectData = [
         title: "More FCC Projects",
         github_link: "https://codepen.io/your-work",
         id: 11,
-        btn: "Codepen",
+        btn1: "Codepen",
     },
 ]
 

@@ -19,7 +19,10 @@ const Projects = () => {
                         </div>
                         <div className="project__title letter-spacing-4 fs-400">{item.title}</div>
                         <div className="project__btn uppercase">
-                            <a href={item.github_link} target="_blank" className="btn btn-dark">{item.btn}</a>
+                            <a href={item.github_link} target="_blank" className="spec__btn btn btn-dark">{item.btn1}</a>
+                            {item.btn2
+                                ? <a href={item.heroku_link} target="_blank" className="spec__btn btn btn-dark">{item.btn2}</a>
+                                : <div className='empty'></div>}
                         </div>
                     </article>
                 ))
