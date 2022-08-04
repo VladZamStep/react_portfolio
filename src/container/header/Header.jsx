@@ -1,7 +1,9 @@
 import './header.css';
 import myPhoto from "../../assets/myPhoto.jpg";
-import CV from '../../assets/cv.pdf';
+import CV_ENG from '../../assets/cv-eng.pdf';
+import CV_RU from '../../assets/cv-ru.pdf';
 import { linksData } from '../../data/data';
+import { IoMdDownload } from 'react-icons/io';
 
 const Header = () => {
     return (
@@ -15,22 +17,25 @@ const Header = () => {
                     <h1>Vlad Stepochkin</h1>
                     <h5 className="letter-spacing-4 text-clr">Front-end Web Developer</h5>
                     <div className="header__btn">
-                        <a href={CV} download className="btn">Download CV</a>
+                        <div className="download__cv">
+                            <a href={CV_ENG} download className="btn"><IoMdDownload className='icon' />Eng-CV</a>
+                            <a href={CV_RU} download className="btn"><IoMdDownload className='icon' />Ru-CV</a>
+                        </div>
                         <a href="#contact" className="btn">Contact Me</a>
+                        <div className="header__socials">
+                            {linksData.map(item => (
+                                <div className="header_social_item" key={item.id}>
+                                    <a
+                                        className="header_a_item"
+                                        href={item.specLink}
+                                        target="_blank"
+                                    >
+                                        {item.icon}
+                                    </a>
+                                </div>
+                            ))}
+                        </div >
                     </div>
-                    <div className="header__socials">
-                        {linksData.map(item => (
-                            <div className="header_social_item" key={item.id}>
-                                <a
-                                    className="header_a_item"
-                                    href={item.specLink}
-                                    target="_blank"
-                                >
-                                    {item.icon}
-                                </a>
-                            </div>
-                        ))}
-                    </div >
                 </div>
             </div>
         </div>
