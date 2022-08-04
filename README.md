@@ -1,4 +1,4 @@
 ## This is my portfolio.
 
-Ypu can see this project on github-pages.
+You can see this project on github-pages.
 Use link in the description.
