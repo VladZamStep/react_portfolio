@@ -12,8 +12,8 @@ const App = () => {
       <Navbar />
       <Header />
       <About />
-      <Certifications />
       <Projects />
+      <Certifications />
       <Contact />
       <Footer />
       <div className="animation-area">

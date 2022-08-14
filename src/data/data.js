@@ -77,13 +77,13 @@ export const navbarData = [
         id: 2,
     },
     {
-        icon: <AiOutlineFileDone />,
-        specLink: "#certifications",
+        icon: <AiOutlineExperiment />,
+        specLink: "#projects",
         id: 3,
     },
     {
-        icon: <AiOutlineExperiment />,
-        specLink: "#projects",
+        icon: <AiOutlineFileDone />,
+        specLink: "#certifications",
         id: 4,
     },
     {
