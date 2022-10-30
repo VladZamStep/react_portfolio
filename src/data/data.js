@@ -47,6 +47,9 @@ import sw1 from '../assets/space-website/sw1.png';
 import sw2 from '../assets/space-website/sw2.png';
 import sw3 from '../assets/space-website/sw3.png';
 
+//Nest-SvelteKit-Auto
+import nsa1 from '../assets/nest-sveltekit-auto/nsa1.png';
+
 //Booka.com
 import b1 from '../assets/booka/b1.png';
 import b2 from '../assets/booka/b2.png';
@@ -127,7 +130,7 @@ export const personalData = [
 ]
 
 export const experienceCardsData = [
-    'HTML', 'CSS', 'Bootstrap', 'JavaScript', 'JQuery', 'React', 'Redux', 'Node.js', 'SCSS', 'Express.js', 'MongoDB', 'Mongoose'
+    'HTML', 'CSS', 'Bootstrap', 'Tailwind', 'JavaScript', 'TypeScript', 'React', 'Redux', 'Svelte', 'SvelteKit', 'NextJS', 'NestJS', 'Node.js', 'SCSS', 'Express.js', 'MongoDB', 'Mongoose', 'Prisma'
 ]
 
 export const certificationsData = [
@@ -188,11 +191,20 @@ export const projectData = [
     {
         image1: sw3,
         image2: sw2,
+        image3: nsa1,
+        title: "Auto-park",
+        github_link: "https://github.com/VladZamStep/nest-sveltekit-auto",
+        id: 4,
+        btn1: "Github",
+    },
+    {
+        image1: sw3,
+        image2: sw2,
         image3: sw1,
         title: "Space Website",
         github_link: "https://github.com/VladZamStep/space-site-landing",
         live_link: "https://vladzamstep.github.io/space-site-landing",
-        id: 4,
+        id: 5,
         btn1: "Github",
         btn2: "Live",
     },
@@ -203,7 +215,7 @@ export const projectData = [
         title: "Codepen-clone",
         github_link: "https://github.com/VladZamStep/codepen-clone",
         live_link: "https://vladzamstep.github.io/codepen-clone",
-        id: 5,
+        id: 6,
         btn1: "Github",
         btn2: "Live",
     },
@@ -214,7 +226,7 @@ export const projectData = [
         title: "Minesweeper-clone",
         github_link: "https://github.com/VladZamStep/minesweeper-clone",
         live_link: "https://vladzamstep.github.io/minesweeper-clone",
-        id: 6,
+        id: 7,
         btn1: "Github",
         btn2: "Live",
     },
@@ -225,7 +237,7 @@ export const projectData = [
         title: "Tic Tac Toe Game",
         github_link: "https://github.com/VladZamStep/tic-tac-toe_game/tree/main",
         live_link: "https://vladzamstep.github.io/tic-tac-toe_game",
-        id: 7,
+        id: 8,
         btn1: "Github",
         btn2: "Live",
     },
@@ -236,7 +248,7 @@ export const projectData = [
         title: "JS Calculator",
         github_link: "https://github.com/VladZamStep/native-js-calculator",
         live_link: "https://vladzamstep.github.io/native-js-calculator",
-        id: 8,
+        id: 9,
         btn1: "Github",
         btn2: "Live",
     },
@@ -247,7 +259,7 @@ export const projectData = [
         title: "Blackjack Minigame",
         github_link: "https://github.com/VladZamStep/blackjack-minigame",
         live_link: "https://vladzamstep.github.io/blackjack-minigame",
-        id: 9,
+        id: 10,
         btn1: "Github",
         btn2: "Live",
     },
@@ -257,7 +269,7 @@ export const projectData = [
         image3: ce1,
         title: "Chrome Extention",
         github_link: "https://github.com/VladZamStep/chrome-extention",
-        id: 10,
+        id: 11,
         btn1: "Github",
     },
     {
@@ -266,7 +278,7 @@ export const projectData = [
         image3: fcc1,
         title: "More FCC Projects",
         github_link: "https://codepen.io/your-work",
-        id: 11,
+        id: 12,
         btn1: "Codepen",
     },
 ]
