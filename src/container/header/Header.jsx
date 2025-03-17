@@ -1,7 +1,6 @@
 import './header.css';
 import myPhoto from "../../assets/myPhoto.jpg";
 import CV_ENG from '../../assets/cv-eng.pdf';
-import CV_RU from '../../assets/cv-ru.pdf';
 import { linksData } from '../../data/data';
 import { IoMdDownload } from 'react-icons/io';
 
@@ -18,17 +17,17 @@ const Header = () => {
                     <h5 className="letter-spacing-4 text-clr">Front-end Web Developer</h5>
                     <div className="header__btn">
                         <div className="download__cv">
-                            <a href={CV_ENG} download className="btn"><IoMdDownload className='icon' />Eng-CV</a>
-                            <a href={CV_RU} download className="btn"><IoMdDownload className='icon' />Ru-CV</a>
+                          <a href={CV_ENG} download className="btn"><IoMdDownload className='icon' />Eng-CV</a>
+                          {/* <a href={CV_RU} download className="btn"><IoMdDownload className='icon' />Ru-CV</a> */}
+                          <a href="#contact" className="btn">Contact Me</a>
                         </div>
-                        <a href="#contact" className="btn">Contact Me</a>
                         <div className="header__socials">
                             {linksData.map(item => (
                                 <div className="header_social_item" key={item.id}>
                                     <a
                                         className="header_a_item"
                                         href={item.specLink}
-                                        target="_blank"
+                                        target="_blank" rel="noreferrer"
                                     >
                                         {item.icon}
                                     </a>

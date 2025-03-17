@@ -13,7 +13,6 @@ const App = () => {
       <Header />
       <About />
       <Projects />
-      <Certifications />
       <Contact />
       <Footer />
       <div className="animation-area">
